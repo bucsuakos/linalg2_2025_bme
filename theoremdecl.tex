@@ -1,0 +1,79 @@
+%theorem declarations
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{tetel}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{deffinicio}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{jeloles}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = :
+]{bizonyitas}
+
+\declaretheorem[style=jeloles,shaded={rulecolor=jelruler, rulewidth=1pt,
+bgcolor=jelbackround},name=Jelölés, numbered=no]{jel}
+
+\declaretheorem[name=Dud]{dud}
+
+\declaretheorem[sibling=dud,shaded={rulecolor=tetelruler,rulewidth=1pt,
+bgcolor=tetelbackground},name=Tétel]{tet}
+
+\declaretheorem[sibling=dud,shaded={rulecolor=tetelruler,rulewidth=1pt,
+bgcolor=tetelbackground},name=Állítás]{all}
+
+\declaretheorem[sibling=dud,shaded={rulecolor=white,
+rulewidth=1pt,bgcolor=tetelbackground},name=Lemma]{mm}
+
+\declaretheorem[sibling=dud,name=Következmény]{kov}
+
+\declaretheorem[sibling=dud,style=tetel,shaded={rulecolor=white, rulewidth=1pt,
+bgcolor=deffbackground},name=Deffiníció]{ff}
+
+\declaretheorem[style=deffinicio,sibling=dud,name=Axióma]{ax}
+
+\declaretheorem[style=bizonyitas,name=Bizonyítás]{biz}
+
+\newenvironment{pl}
+	{\begin{center}
+
+	\begin{tabular}{|p{0.9\textwidth}}
+	\hline\\
+	}
+	{ 
+	\\\\\hline
+	\end{tabular} 
+	\end{center}
+	}
+
+\newenvironment{megj}
+	{\begin{center}
+
+	\begin{tabular}{||p{0.9\textwidth}}
+	}
+	{ 
+	\end{tabular} 
+	\end{center}
+	}
+
+

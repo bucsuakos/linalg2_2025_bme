@@ -1,0 +1,44 @@
+	\section{Qadratikus alak}
+	\begin{ff}
+		$V_{\R,\fin}$ és $\beta:V\times V\to \R$ szimmetrikus, bilineáris leképezés,
+		$\B=\hz{b_1,\ldots,b_n}$ $V$ vektortér egy bázisa,
+		$[x]_\B=(x_1,\ldots,b_n)^T$, ekkor a \deff{qadratikus alak}:
+		\begin{equation*}
+			Q(x)=[x]_\B^T[\beta]_\B[x]_\B=\sum_{i,j=1}^n\beta(b_i,b_j)x_ix_j=\sum_{i,j=1}^n
+			a_{ij}x_ix_j
+		\end{equation*}
+		Ekkor ez az alak az $x_1,\ldots,x_n$ egy homogén másodfokú polinomja.
+	\end{ff}
+	\begin{jel}
+		Az a szimmetrikus, bilineáris $\beta$ függvény, amit $Q$ meghatároz
+		\vjel{$\beta_Q$} jelöli.
+		jelöli.
+	\end{jel}
+	\begin{jel}
+		$(V,\beta)_{\R,\inf}$ jelöli innentől (amíg másképpen nincs
+		meghatározva) az $\R$ feletti véges vektorteret, amin $\beta$ egy szimmetrikus,
+		bilineáris függvény.
+	\end{jel}
+	\begin{ff}
+		\vjel{$(V,\beta)_{\R,\fin}$}, $\mathcal{C}=\hz{c_1,\dots,c_n}$ $V$-nek egy ortonormált
+		bázisa, $A=[\beta_Q]_\mathcal{C}$, akkor $\B=\hz{b_1,\ldots,b_n}$
+		$V$-beli bázis által feszített egydimenziós altereket (egyeneseket), a
+		$Q$ \deff{főtengelyeinek} nevezzük.
+	\end{ff}
+	\begin{ff}
+		$Q$ qadratikus alak:
+		\begin{enumerate}
+			\item \deff{pozitív definit}, pontosan akkor, ha $\beta_Q$ is az,
+			\item \deff{pozitív semidefinit}, pontosan akkor, ha $\beta_Q$ is az,
+			\item \deff{pozitív definit}, pontosan akkor, ha $\beta_Q$ is az,
+			\item \deff{pozitív semidefinit}, pontosan akkor, ha $\beta_Q$ is az,
+			\item \deff{semidefinit}, pontosan akkor, ha $\beta_Q$ is az,
+		\end{enumerate}
+	\end{ff}
+	\begin{ff}
+		$(a_{ij})=A\in\R\nn$, $b=(b_1,\ldots,b_2)^T\in\R^n$, $d\in\R$, $x\in\R^n$:
+		\begin{equation*}
+			f(x)=x^TAx+b^Tx+d=\sum_{i,j=1}^na_{ij}x_iy_j+\sum_i^nb_ix_i+d=0
+		\end{equation*}
+		egyenletet kielégítő pontok \deff{másodfokú görbék} halmazát alkotják.
+	\end{ff}

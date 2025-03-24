@@ -1,0 +1,251 @@
+\section{Saját jelölések}
+	\begin{jel}
+		Az $\hz{i\in\mathbb{N}|1\leq n}$ halmazt \vjel{$\underline{n}$} jelöli.
+	\end{jel}
+
+\section{Alterek összege}
+	\begin{jel}
+		\vjel{$V_K$} jelöli a $V$ vektorteret $K$ test felett, de következetesség miatt
+		mindig megjegyezzük, hogy "$V_K$ vektortér", ami még mindig rövidebb,
+		mint a hosszú "$V$ $K$ test feletti vektortér".
+	\end{jel}
+	\begin{ff}
+		Ha $V_K$ vektortér és $V_1,\ldots,V_n\leq V$, akkor ezen alterek
+		\deff{összege}:
+		\begin{equation*}
+			V_1+\ldots+V_n=\hz{v_1+\ldots +v_n|\,v_i\in V_i,\,1\leq i\leq n}
+		\end{equation*}
+	\end{ff}
+	\begin{ff}
+		Ha $V_K$ vektortér és $V_1,\ldots,V_n\leq V$, akkor ezen alterek
+		\deff{direkt összege}, olyan összeg, aminek minden eleme
+		egyértelműen áll elő $v_1+\ldots+v_n$ ($\forall v_i\in
+		V_i, i\in\underline{n}$).  ha benne minden összeg egyértelmű.
+	\end{ff}
+	\begin{ff}
+		$V_k$ vektortér, $U,W\leq V$, $V=U\oplus W$, $\pi :V\to v$ lineáris
+		leképezés, $u\in U$, $w\in W$, hogy $v=u+w \in V$ esetén $\pi(v)=u$.
+		Ekkor $\pi$-t az \deff{$U$ altétrre való $W$ irányú
+		vetítésnek nevezzük.}
+	\end{ff}
+
+	\section{Konjugált mátrixok}
+	\begin{ff}
+		$A,B\in K^{n\times n}$ $A$ és $B$ \deff{konjugáltak}
+		(hasonlók), ha létezik egy olyan $X\in K^{n\times n}$, melyre
+		$B=X^{-1}AX$.
+	\end{ff}
+	\begin{ff}
+		$V_K$ vektortér, $f:V\to V$ linráris leképezés a $V$
+		\deff{endomorfizmusa}.
+	\end{ff}
+	\begin{jel}
+		\vjel{$\End_KV$}
+	\end{jel}
+	\begin{ff}
+		$V_K$ vektortér, $f\in \End_KV$, $t\in K$:
+		\begin{enumerate}
+			\item $t\in K$ \deff{sajátértéke} $f$-nek, ha létezik
+				egy olyan nemnulla $V$-beli vektor, amire $f(v)=tv$,
+			\item $t\in K$ sajátérték, ekkor a $V$-beli $v$ vektor a
+				\deff{$t$-hez tartozó sajátvektor}, ha $f(v)=tv$.
+			\item az $f$ összes sajátértékének halmaza $f$
+				\deff{spektruma}.
+		\end{enumerate}
+	\end{ff}
+	\begin{ff}
+		Ha $n\ge 1$, $A\in K^{n\times n}$, ekkor $A$ \deff{mátrix
+		sajátértékei, sajátvektorai, spektruma} az $f_A:K^n\to K^n$,
+		endomorfizmus sajátértékei, sajátvektorai és spektruma.
+	\end{ff}
+	\begin{ff}
+		$V_K$ vektortér, $f\in \End_KV$,az $S_t$ a $t$-hez tartozó sajátvektorokat tartalmazó
+		halmaz, akkor $S\cup {0_V}$ az $f$ $t$-hez tartozó
+		\deff{sajátaltere}.
+	\end{ff}
+	\begin{jel}
+		\vjel{$\Eig_{f,t}$}
+	\end{jel}
+	\begin{ff}
+		$V_K$ vektortér $f\in \End_KV$ , $t\in K$ változó, akkor $\vdet(f-tI)$ 
+		polinom az $f$ \deff{karakterisztikus polinomja}.
+	\end{ff}
+	\begin{jel}
+		\vjel{$\vchar_f(t)$}
+	\end{jel}
+	\begin{ff}
+		$V_K$ vektortér, $f\in \End_KV$, $t\in K$, ekkor $\vdim(\Eig_{f,t})$ a $t$ 
+		sajátártákánek \deff{geometriai multiplicitása}.
+	\end{ff}
+	\begin{ff}
+		$V_K$ vektortér, $t_0$ az $f\in\End_VK$ sajátértéke, ekkor $t_0$ \deff{algebrai
+		multiplicitása} $k$, ha $t_0$ pntosan $k$-szoros gyöke $\vchar_f(t)$-nek.
+	\end{ff}
+	\begin{ff}
+		$V_K$ vektortér, ekkor $f\in\End_KV$ \deff{diagonalizálható}, ha létezik egy
+		$\mathcal{B}$ bázis, amiben $[f]_{\mathcal{B}}$ diagonális.
+	\end{ff}
+
+\section{Mátrixok sajátfelbontása}
+	\begin{ff}
+		$A\in K^{n\times n}$, $y\in K^n-{0}$, akkor az $y^T$ sorvektor az $A$
+		\deff{baloldali sajátvektora}, ha $y^TA=\lambda y^T$ 
+	\end{ff}
+	\begin{ff}
+		$A\in K\nn$ diagonilazálható mátrix \deff{sajátfelbontása} $PDP^{-1}$, ahol $P$
+		$i$-edik oszlopa az $A$ mátrixhoz tartozó $t_i$-edik egyik sajátvektora
+		(jelölje ezt most $\underline{x}_i$), $P^{-1}$ $i$-edik sora az $A$ mátrix
+		$t_i$-hez tartozó egyik baloldali sajátvektora (jelölje most ezt
+		$\underline{y}_i)$. Ekkor:
+		\begin{equation*}
+			\sum_{i=1}^nt_i\underline{x}_i\underline{y}_i
+		\end{equation*}
+		a \deff{sajátfelbontás diadikus alakja}.
+	\end{ff}
+
+	\section{Spektrálfelbontás}
+	\begin{ff}
+		Ha $A\in K\nn$-nak létezik sajátfelbontása és $P_i$ a $\Eig_{A,t(i)}$-re való
+		vetítés mátrixa (a vetítés iránya a többi sajátaltér direkt összege),
+		akkor $A$ \deff{spektrálfelbontása}:
+		\begin{equation*}
+			A=t_1P_1+\ldots+t_kP_k
+		\end{equation*}
+	\end{ff}
+	\section{Bilineáris leképezések}
+	Dián vannak itt dolgok, amit nem akarok leírni.
+
+	Dia (deffiníció)tartalma:
+	\begin{enumerate}
+		\item bilineáris leképezés
+		\item szimmetrikus bilineáris leképezés
+		\item Gram-mátrix
+		\item baloldali, jobboldali mag, reguláris
+		\item ortogonalitás bilineáris leképezésre nézve
+		\item ortogonális kiegészítő
+		\item Tehetetlenségi Tétel
+	\end{enumerate}
+
+\section{Euclides-terek}
+	\begin{ff}
+		$V_{\mathbb{R}}$, $\beta:V\times V\to \mathbb{R}$ bilineáris leképezés,
+		ekkor $\beta$ \deff{pozitív definit}, ha szimmetrikus és minden V-beli v vektorra
+		$\beta(v,v)\ge 0$, továbbá $\beta(v,v)=0$ pontosan akkor, ha $v=0$. Másik
+		elnevezés a \deff{skalárszorzat}.
+	\end{ff}
+
+	\begin{ff}
+		~\begin{enumerate}
+			\item $V_{\mathbb{R}}$, $\beta:=\scp{.,.}:V^2\to \mathbb{R}$
+				skalárszorzat (másnéven belsőszorzat), ekkor a $(V,\scp{.,.})$ pár
+				\deff{Euclides-tér} (inner product space).
+			\item $v\in V$, akkor $\vnorm{v}=\sqrt{\scp{v,v}}$ a $v$ \deff{normája}
+			\item $v,w\in V$, akkor $d(v,w)=\vnorm{v-w}$ a $v$ és a $w$ \deff{távolsága}
+		\end{enumerate}
+	\end{ff}
+	\begin{jel}
+		\vjel{$(V,\scp{.,.})_E$} jelöli a $V_\mathbb{R}$ vektorteret, amiben $\scp{.,.}$ 
+		vektorszorzat. Ha emellett $V$ még véges dimenziós is, akkor ezt
+		\vjel{$(V,\scp{.,.})_{E,\fin}$} jelöli.
+	\end{jel}
+	\begin{ff}
+		$\euclsp$ ekkor ha $v,w\in V$, akkor a \deff{szögük}:
+		\begin{equation*}
+			\arccos\frac{\scp{v,w}}{\vnorm{v}\vnorm{w}}
+		\end{equation*}
+	\end{ff}
+	\begin{ff}
+		$\euclsp$ és $v,w\in V$, akkor $v\perp_{\scp{.,.}}w$, ha $v$ és $w$ szöge $\frac{\pi}{2}$.
+	\end{ff}
+
+\section{Ortogonális bázisok}
+	\begin{ff}
+		$\euclsp$ $S\subset V$ \deff{ortogonális} részhalmaz, ha minden $v,w\in S$ 
+		esetén $v\perp_{\scp{.,.}}w$, valamint $S$ \deff{ortonormált}, ha
+		ortogonális és minden $S$-beli $v$-re $\vnorm{v}=1$, és $S$
+		\deff{ortonormált bázis}, ha ortonormált és bázis.
+	\end{ff}
+	\begin{ff}
+		$A\in\R^{\nn}$ \deff{pozitív definit mátrix}, ha $\beta(x,y)=x^TAy$
+		pozitív definit pontosan akkor, ha $A$ szimmetrikus és $x^Tx>0$ minden
+		nemnulla $\R^n-{0}$-beli vektorra.
+	\end{ff}
+
+\section{Ortogonális kiegészítő}
+
+\section{Adjungált}
+	\begin{ff}
+		$(V_1,\scp{.,.}_1)_E$, $(V_2,\scp{.,.}_2)_E$, $f:V_1\to V_2$ lineáris leképezés
+		$f^*:V_2\to V_1$ lineáris függvényt az $f$ \deff{adjungáltjának} nevezzük, ha
+		minden $v$ $V_1$-beli,$w$ $V_2$-beli vektorokra:
+		\begin{equation*}
+			\scp{f(v),w}_2=\scp{v,f^*(w)}_1.
+		\end{equation*}
+	\end{ff}
+	\begin{ff}
+		$\euclsp$ $f\in\End_\R V$, ekkor $f$ \deff{önadjungált}, ha $f^*=f$.
+	\end{ff}
+	\begin{ff}
+		$X\in\R\nn$ \deff{ortogonális}, ha $X^TX=I$ (azaz $X^T=X^{-1}$).
+	\end{ff}
+
+\section{Ortogonális transzformációk}
+	\begin{ff}
+		$\euclsp$, $f\in\End\R V$, ekkor $f$ ortogonális transzformácó, ha bijektív
+		(izomorfizmus) és minden $V$-beli $v$ és $w$ esetén:
+		\begin{equation*}
+			\scp{v,w}=\scp{f(v),f(w)}.
+		\end{equation*}
+	\end{ff}
+	\begin{ff}
+		A $(G,\cdot)$ páros \deff{csoport}, ha $G\neq\emptyset$.
+	\end{ff}
+	\begin{ff}
+		A $(G,\cdot)$ páros \deff{Abel-csoport}, ha $(G,\cdot)$ csoport és $\cdot$ 
+		kommutatív.
+	\end{ff}
+	\begin{jel}
+		Az $\scp{.,.}$-ra ortogonális transzformációk csoportját
+		\vjel{$\vO_{\scp{.,.}}$} jelöli (vagy \vjel{$\vO_{\scp{}}$}).
+	\end{jel}
+	\begin{ff}
+		Ha $\fineuclsp$, $V=\R\nn A\in V$ ortogonális leképezés mátrixa, ekkor az
+		ilyen leképezések csoportja $\scp{.,.}$-ra nézve az \deff{n-edrendű
+		ortogonális csoport}.
+	\end{ff}
+	\begin{jel}
+		\vjel{$\vO_{n,\scp{}}(\R)$}
+	\end{jel}
+	\begin{ff}
+		$\fineuclsp$, $f\in\vO(V)$, ekkor az olyan $f$-ek melyekre $det(f)=1$ a
+		\deff{speciális ortogonális csoportot alkotnak}.
+	\end{ff}
+	\begin{jel}
+		\vjel{$\SO(V)$}
+	\end{jel}
+
+\section{Szemiortogonális mátrixok}
+	\begin{ff}
+		$A\in\R\mn$ \deff{szemiortogonális}, ha az oszlopok vagy sorok ortonormált
+		bázist (vagy csak rendszert?) alkotnak. Tehát $A^TA=I_n$, ha az oszlopok
+		alkotnak, $AA^T=I_m$, ha a sorok alkotnak ortonormált rendszert.
+	\end{ff}
+	\begin{ff}
+		A teljes oszloprangú ($\rank{A}=n$) $A\in\R\mn$ \deff{QR-felbontása} $QR=A$, ha
+		$Q\in\R\mn$ szemiortogonális, $R\in\R\nn$ pedig felsőháromszögmátrix, ahol a
+		diagonális elemek nemnegatívok.
+	\end{ff}
+	
+	\begin{ff}
+		$\fineuclsp$, $\beta:V\times V\to \R$, szimmetrikus, bilineáris, akkor
+	$\beta:$	
+		\begin{enumerate}
+			\item \deff{pozitív definit}, ha $\forall v\in V:$ $\beta(v,v)\ge 0$ és
+				$\beta(v,v)=0\leftrightarrow v=0$,
+			\item \deff{pozitív semidefinit}, ha $\forall v\in V:$ $\beta(v,v)\ge 0$,
+			\item \deff{negatív definit}, ha $\forall v\in V:$ $\beta(v,v)\leq 0$ és
+				$\beta(v,v)=0\leftrightarrow v=0$,
+			\item \deff{negatív semidefinit}, ha $\forall v\in V:$ $\beta(v,v)\leq 0$,
+			\item \deff{indefinit}, ha $\exists v,w:$ $\beta(v,v)>0$, $\beta(w,w)<0$.
+		\end{enumerate}
+	\end{ff}
