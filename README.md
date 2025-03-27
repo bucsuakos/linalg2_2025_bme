@@ -1,9 +1,9 @@
-#2025 szaktársaknak
+# 2025 szaktársaknak
 
 A deffiníciókkal minimum, az állításokkal is remélhetőleg el szeretnék
 készülni, viszont a bizonyításokkal csak akkor, ha kapok segítséget.
 
-#Azoknak akik szeretnének segíteni
+# Azoknak akik szeretnének segíteni
 
 Akik hibát találnak a **pdf**-ben, azok írják meg (lehetőleg github
 kommentben), a hiba helyével együtt (legalább az oldalszámot, azon belül is
@@ -14,7 +14,7 @@ lehet írni, hogy melyik kettő közötti részben).
 Ha valaki szeretne latex-kóddal hozzájárulni és tud githubot használni, az
 csinálja (szépen kérem).
 
-#Github májsztró szamaritánoknak (csak linux)
+# Github májsztró szamaritánoknak (csak linux)
 
 A cél az, hogy a kódban levő kommentekből tiszta legyen a munkafolyamat, de
 ha kell, akkor dokumentációt is írok.
@@ -48,7 +48,7 @@ int_linalg2_1.tex-ből kinyerjük csak a deffiníciókat és az
 int_linalg2_1_deff.tex fileba berakjuk (amit már speciel automatizáltam egy
 bash-sel), majd inputolom egy vég-latex-ba, linalg2_1_deff.tex-be.
 
-#Érdekesség
+# Érdekesség
 
 Ha nincsen olyan cucc, ami már ugyanazt csinálja, amit én összetákoltam
 (biztos, hogy tex-ben is meg lehet ezeket oldani), akkor általánosítható ez
