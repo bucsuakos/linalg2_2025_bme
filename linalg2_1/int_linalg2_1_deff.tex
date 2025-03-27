@@ -30,14 +30,14 @@
 	\end{ff}
 	\begin{ff}
 		Ha $V_K$ vektortér és $V_1,\ldots,V_n\leq V$, akkor ezen alterek
-		\deff{direkt összege}, olyan összeg, aminek minden eleme
+		\deff{direkt összege}, olyan alterek összege, aminek minden eleme
 		egyértelműen áll elő $v_1+\ldots+v_n$ ($\forall v_i\in
-		V_i, i\in\underline{n}$).  ha benne minden összeg egyértelmű.
+		V_i, i\in\underline{n}$) alakban.
 	\end{ff}
 	\begin{ff}
 		$V_k$ vektortér, $U,W\leq V$, $V=U\oplus W$, $\pi :V\to v$ lineáris
 		leképezés, $u\in U$, $w\in W$, hogy $v=u+w \in V$ esetén $\pi(v)=u$.
-		Ekkor $\pi$-t az \deff{$U$ altétrre való $W$ irányú
+		Ekkor $\pi$-t az \deff{$U$ altérre való $W$ irányú
 		vetítésnek nevezzük.}
 	\end{ff}
 
@@ -67,19 +67,19 @@
 	\end{ff}
 	\begin{ff}
 		Ha $n\ge 1$, $A\in K^{n\times n}$, ekkor $A$ \deff{mátrix
-		sajátértékei, sajátvektorai, spektruma} az $f_A:K^n\to K^n$,
+		sajátértékei, sajátvektorai, spektruma} az $f_A:K^n\to K^n$, $x\mapsto Ax$
 		endomorfizmus sajátértékei, sajátvektorai és spektruma.
 	\end{ff}
 	\begin{ff}
 		$V_K$ vektortér, $f\in \End_KV$,az $S_t$ a $t$-hez tartozó sajátvektorokat tartalmazó
-		halmaz, akkor $S\cup {0_V}$ az $f$ $t$-hez tartozó
+		halmaz, akkor $S\cup {0_V}$ az $f$ endomorfizmus $t$-hez tartozó
 		\deff{sajátaltere}.
 	\end{ff}
 	\begin{jel}
 		\vjel{$\Eig_{f,t}$}
 	\end{jel}
 	\begin{ff}
-		$V_K$ vektortér $f\in \End_KV$ , $t\in K$ változó, akkor $\vdet(f-tI)$ 
+		$V_K$ vektortér $f\in \End_KV$ , $t$ változó, akkor $\vdet(f-tI)$ 
 		polinom az $f$ \deff{karakterisztikus polinomja}.
 	\end{ff}
 	\begin{jel}
@@ -141,9 +141,9 @@
 \section{Euclides-terek}
 	\begin{ff}
 		$V_{\mathbb{R}}$, $\beta:V\times V\to \mathbb{R}$ bilineáris leképezés,
-		ekkor $\beta$ \deff{pozitív definit}, ha szimmetrikus és minden V-beli v vektorra
-		$\beta(v,v)\ge 0$, továbbá $\beta(v,v)=0$ pontosan akkor, ha $v=0$. Másik
-		elnevezés a \deff{skalárszorzat}.
+		ekkor $\beta$ \deff{pozitív definit}, ha szimmetrikus és minden V-beli
+		$v$ vektorra $\beta(v,v)\ge 0$, továbbá $\beta(v,v)=0$ pontosan akkor,
+		ha $v=0$. Másik elnevezés a \deff{skalárszorzat}.
 	\end{ff}
 
 	\begin{ff}
@@ -152,7 +152,7 @@
 				skalárszorzat (másnéven belsőszorzat), ekkor a $(V,\scp{.,.})$ pár
 				\deff{Euclides-tér} (inner product space).
 			\item $v\in V$, akkor $\vnorm{v}=\sqrt{\scp{v,v}}$ a $v$ \deff{normája}
-			\item $v,w\in V$, akkor $d(v,w)=\vnorm{v-w}$ a $v$ és a $w$ \deff{távolsága}
+			\item $v,w\in V$, akkor $d(v,w)=||v-w||$ a $v$ és a $w$ \deff{távolsága}
 		\end{enumerate}
 	\end{ff}
 	\begin{jel}
@@ -203,7 +203,7 @@
 
 \section{Ortogonális transzformációk}
 	\begin{ff}
-		$\euclsp$, $f\in\End\R V$, ekkor $f$ ortogonális transzformácó, ha bijektív
+		$\euclsp$, $f\in\End_\R V$, ekkor $f$ ortogonális transzformácó, ha bijektív
 		(izomorfizmus) és minden $V$-beli $v$ és $w$ esetén:
 		\begin{equation*}
 			\scp{v,w}=\scp{f(v),f(w)}.
@@ -275,13 +275,13 @@
 	\begin{jel}
 		Az a szimmetrikus, bilineáris $\beta$ függvény, amit $Q$ meghatároz
 		\vjel{$\beta_Q$} jelöli.
-		jelöli.
 	\end{jel}
 	\begin{jel}
-		$(V,\beta)_{\R,\inf}$ jelöli innentől (amíg másképpen nincs
-		meghatározva) az $\R$ feletti véges vektorteret, amin $\beta$ egy szimmetrikus,
-		bilineáris függvény.
+		\vjel{$(V,\beta)_{\R,\fin}$} jelöli innentől (amíg másképpen nincs
+		meghatározva, $\beta$ milyensége) az $\R$ feletti véges vektorteret,
+		amin $\beta$ egy szimmetrikus, bilineáris függvény.
 	\end{jel}
+
 	\begin{ff}
 		\vjel{$(V,\beta)_{\R,\fin}$}, $\mathcal{C}=\hz{c_1,\dots,c_n}$ $V$-nek egy ortonormált
 		bázisa, $A=[\beta_Q]_\mathcal{C}$, akkor $\B=\hz{b_1,\ldots,b_n}$
