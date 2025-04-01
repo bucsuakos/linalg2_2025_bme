@@ -1,4 +1,3 @@
-.gitignore
 *.log
 *.aux
 linalg2*.pdf

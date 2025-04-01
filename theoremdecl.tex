@@ -1,4 +1,17 @@
+%common shorthands:
+	%all - állítás
+	%mm - lemma
+	%ff - deffiníció
+	%ax - axióma
+	%tet - tétel
+	%jel - jelölés
+	%biz - bizonyítás
+
 %theorem declarations
+%dud comes here because it is the sibling of all numbered declared theorems.
+%There is no seperate Dud theorem, it doesn't have a style
+\declaretheorem[name=Dud]{dud}
+
 \declaretheoremstyle[
 	spaceabove=6pt,
 	headfont=\normalfont\bfseries,
@@ -6,6 +19,38 @@
 	headformat=swapnumber,
 	headpunct = {}
 ]{tetel}
+\declaretheorem[style=tetel,sibling=dud,shaded={rulecolor=tetelruler,rulewidth=0pt,
+bgcolor=tetelbackground},name=Tétel]{tet}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{allitas}
+\declaretheorem[style=allitas,sibling=dud,shaded={rulecolor=allruler,rulewidth=0pt,
+bgcolor=allbackground},name=Állítás]{all}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{lemma}
+\declaretheorem[style=lemma,sibling=dud,shaded={rulecolor=mmruler,rulewidth=0pt,
+bgcolor=mmbackground},name=Lemma]{mm}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{kovetkeztetes}
+\declaretheorem[style=kovetkeztetes,sibling=dud,shaded={rulecolor=kovruler,rulewidth=0pt,
+bgcolor=kovbackground},name=Következmény]{kov}
 
 \declaretheoremstyle[
 	spaceabove=6pt,
@@ -14,6 +59,8 @@
 	headformat=swapnumber,
 	headpunct = {}
 ]{deffinicio}
+\declaretheorem[sibling=dud,style=tetel,shaded={rulecolor=deffruler, rulewidth=0pt,
+bgcolor=deffbackground},name=Deffiníció]{ff}
 
 \declaretheoremstyle[
 	spaceabove=6pt,
@@ -21,8 +68,22 @@
 	bodyfont=\normalfont,
 	headformat=swapnumber,
 	headpunct = {}
-]{jeloles}
+]{axioma}
+\declaretheorem[style=axioma,sibling=dud,shaded={rulecolor=axruler, rulewidth=0pt,
+bgcolor=axbackground},name=Axióma]{ax}
 
+%jel is not the sibling of dud (not numbered)
+\declaretheoremstyle[
+	spaceabove=6pt,
+	headfont=\normalfont\bfseries,
+	bodyfont=\normalfont,
+	headformat=swapnumber,
+	headpunct = {}
+]{jeloles}
+\declaretheorem[style=jeloles,shaded={rulecolor=jelruler, rulewidth=1pt,
+bgcolor=jelbackround},name=Jelölés, numbered=no]{jel}
+
+%biz is not the sibling of dud (not numbered)
 \declaretheoremstyle[
 	spaceabove=6pt,
 	headfont=\normalfont\bfseries,
@@ -30,50 +91,26 @@
 	headformat=swapnumber,
 	headpunct = :
 ]{bizonyitas}
+\declaretheorem[style=bizonyitas,shaded={rulecolor=bizruler, rulewidth=1pt,
+bgcolor=bizbackground},name=Bizonyítás]{biz}
 
-\declaretheorem[style=jeloles,shaded={rulecolor=jelruler, rulewidth=1pt,
-bgcolor=jelbackround},name=Jelölés, numbered=no]{jel}
-
-\declaretheorem[name=Dud]{dud}
-
-\declaretheorem[sibling=dud,shaded={rulecolor=tetelruler,rulewidth=1pt,
-bgcolor=tetelbackground},name=Tétel]{tet}
-
-\declaretheorem[sibling=dud,shaded={rulecolor=tetelruler,rulewidth=1pt,
-bgcolor=tetelbackground},name=Állítás]{all}
-
-\declaretheorem[sibling=dud,shaded={rulecolor=white,
-rulewidth=1pt,bgcolor=tetelbackground},name=Lemma]{mm}
-
-\declaretheorem[sibling=dud,name=Következmény]{kov}
-
-\declaretheorem[sibling=dud,style=tetel,shaded={rulecolor=white, rulewidth=1pt,
-bgcolor=deffbackground},name=Deffiníció]{ff}
-
-\declaretheorem[style=deffinicio,sibling=dud,name=Axióma]{ax}
-
-\declaretheorem[style=bizonyitas,name=Bizonyítás]{biz}
 
 \newenvironment{pl}
 	{\begin{center}
-
-	\begin{tabular}{|p{0.9\textwidth}}
-	\hline\\
-	}
-	{ 
-	\\\\\hline
-	\end{tabular} 
+		\begin{tabular}{|p{0.9\textwidth}}
+		\hline\\
+		}
+		{ 
+		\\\\\hline
+		\end{tabular} 
 	\end{center}
 	}
 
 \newenvironment{megj}
 	{\begin{center}
-
-	\begin{tabular}{||p{0.9\textwidth}}
-	}
-	{ 
-	\end{tabular} 
+		\begin{tabular}{||p{0.9\textwidth}}
+		}
+		{ 
+		\end{tabular} 
 	\end{center}
 	}
-
-

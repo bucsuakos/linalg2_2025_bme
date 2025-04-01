@@ -2,6 +2,8 @@
 \begin{jel}
 	Az $\hz{i\in\mathbb{N}|1\leq n}$ halmazt \vjel{$\underline{n}$} jelöli.
 \end{jel}
+
+\section{Vektorterek}
 \begin{tet}
 	$V$ vektortér $K$ felett, $S$ független $V$-beli vektorok halmaza,
 	ekkor ha $v\not\in\vspan(S)$, akkor $S\cup\hz{s}$ is független.
@@ -57,6 +59,7 @@
 	mindig megjegyezzük, hogy "$V_K$ vektortér", ami még mindig rövidebb,
 	mint a hosszú "$V$ $K$ test feletti vektortér".
 \end{jel}
+
 \begin{ff}
 	Ha $V_K$ vektortér és $V_1,\ldots,V_n\leq V$, akkor ezen alterek
 	\deff{összege}:
@@ -251,12 +254,20 @@ Dia (deffiníció)tartalma:
 
 \section{Ortogonális transzformációk}
 \begin{ff}
-	$\euclsp$, $f\in\End_\R V$, ekkor $f$ ortogonális transzformácó, ha bijektív
-	(izomorfizmus) és minden $V$-beli $v$ és $w$ esetén:
+	$\euclsp$, $f\in\End_\R V$, ekkor $f$ \deff{ortogonális transzformácó}, ha
+	bijektív (izomorfizmus) és minden $V$-beli $v$ és $w$ esetén:
 	\begin{equation*}
 		\scp{v,w}=\scp{f(v),f(w)}.
 	\end{equation*}
 \end{ff}
+
+\begin{all}
+	~\begin{enumerate}
+		\item $\id_V$ ortogonális,
+		\item $f,g\in\End_\R V$, akkor $fg$, $f\inv$ ortogonális.
+	\end{enumerate}
+\end{all}
+
 \begin{ff}
 	A $(G,\cdot)$ páros \deff{csoport}, ha $G\neq\emptyset$.
 \end{ff}
@@ -264,25 +275,41 @@ Dia (deffiníció)tartalma:
 	A $(G,\cdot)$ páros \deff{Abel-csoport}, ha $(G,\cdot)$ csoport és $\cdot$ 
 	kommutatív.
 \end{ff}
+
+\begin{all}
+	Az $\scp{.,.}$-ortogonális transzformációk csoportot alkotnak a kompozícióra nézve
+\end{all}
+
 \begin{jel}
-	Az $\scp{.,.}$-ra ortogonális transzformációk csoportját
-	\vjel{$\vO_{\scp{.,.}}$} jelöli (vagy \vjel{$\vO_{\scp{}}$}).
+	\vjel{$\vO_{\scp{.,.}}$} (vagy \vjel{$\vO_{\scp{}}$}).
 \end{jel}
+
 \begin{ff}
-	Ha $\fineuclsp$, $V=\R\nn A\in V$ ortogonális leképezés mátrixa, ekkor az
-	ilyen leképezések csoportja $\scp{.,.}$-ra nézve az \deff{n-edrendű
+	Ha $\fineuclsp$, $V=\R\nn A\in V$ $\scp{.,.}$-ortogonális leképezés mátrixa, ekkor az
+	ilyen leképezések csoportja a mátrixszorzásra nézve az \deff{n-edrendű
 	ortogonális csoport}.
 \end{ff}
+
 \begin{jel}
 	\vjel{$\vO_{n,\scp{}}(\R)$}
 \end{jel}
+
 \begin{ff}
 	$\fineuclsp$, $f\in\vO(V)$, ekkor az olyan $f$-ek melyekre $det(f)=1$ a
 	\deff{speciális ortogonális csoportot alkotnak}.
 \end{ff}
+
 \begin{jel}
 	\vjel{$\SO(V)$}
 \end{jel}
+
+\begin{all}
+	Ha $\euclsp$, akkor $\SO(V)$ csoport.
+\end{all}
+
+\begin{megj}
+	Tehát a deffiníció értelmes.
+\end{megj}
 
 \begin{ff}
 	Ha $A:\R^2\to \R^2$ mátrix:
@@ -307,6 +334,10 @@ Dia (deffiníció)tartalma:
 	$2\times 2$-es blokkok $R_t$, az $1\times 1$
 	blokkok $\pm1$ alakúak.
 \end{tet}
+
+\begin{kov}
+	Két síkra való tükrözés tengely körüli forgatás.
+\end{kov}
 
 
 \section{Szemiortogonális mátrixok}

@@ -54,3 +54,22 @@ Ha nincsen olyan cucc, ami már ugyanazt csinálja, amit én összetákoltam
 (biztos, hogy tex-ben is meg lehet ezeket oldani), akkor általánosítható ez
 a rendszer és több tárgyhoz való jegyzetkészítéshez is könnyebben lehet
 jegyzetet készíteni.
+
+# Tippek a latexhoz, minden összefüggés nélkül
+
+Ha azt szeretnénk, hogy az enumerate ne a Deffiníció, Tétel, stb. címke
+mellett kezdődjön, akkor a \begin{enumerate} elé egy tildét kell rakni.
+
+Nem biztos, hogy érdemes nem magyar billentyűzetre átszokni, ha magyar
+nyelvű matematikai szövegeket írunk, mert a képleteket angol, a szöveget
+magyar nyelven írni elég nagy öngól.
+
+A stack-overflow hasznos lehet informálódásra, de ne másoljunk ki vakon
+olyan dolgokat, amiket nem értünk, ha nem akarjuk, hogy beszarjon egyszer
+csak minden (és nem készítettünk törlőkendőt). Az egyszerűbb megoldás, amit
+értünk, az sokszor jobb.
+
+Ha tökmindegy, akkor másoljunk mindent az internetről gondolkodás nélkül,
+anélkül, hogy végigolvastuk volna a cikket (hát még a dokumentációt),
+elvégre angolul van minden. Ha senki nem ad nekünk feladatot, akkor
+csináljunk magunknak.
