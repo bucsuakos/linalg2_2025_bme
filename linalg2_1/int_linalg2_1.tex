@@ -1,7 +1,20 @@
 \section{Saját jelölések}
+\begin{pl}
+	Példa
+\end{pl}
+\begin{megj}
+	Megjegyzés
+\end{megj}
 \begin{jel}
-	Az $\hz{i\in\mathbb{N}|1\leq n}$ halmazt \vjel{$\underline{n}$} jelöli.
+	Az $\hz{i\in\mathbb{N}|1\leq i\leq n}$ halmazt \vjel{$\underline{n}$} jelöli.
 \end{jel}
+\begin{jel}
+	A szokásos halmazokon értelmezett kivonást a $-$ jel fogja jelölni
+	$\backslash$ helyett
+\end{jel}
+\begin{pl}
+	A nemnulla valós számok halmaza: $\R-\hz{0}$
+\end{pl}
 
 \section{Vektorterek}
 \begin{tet}
@@ -64,7 +77,7 @@
 	Ha $V_K$ vektortér és $V_1,\ldots,V_n\leq V$, akkor ezen alterek
 	\deff{összege}:
 	\begin{equation*}
-		V_1+\ldots+V_n=\hz{v_1+\ldots +v_n|\,v_i\in V_i,\,1\leq i\leq n}
+		V_1+\ldots+V_n=\hz{v_1+\ldots +v_n|\,v_i\in V_i,\,i\in\underline{n}}
 	\end{equation*}
 \end{ff}
 \begin{ff}
@@ -85,7 +98,7 @@
 	Ha $V_K$ vektortér, akkor $V_1+\ldots +V_n(=\vspan(\cup V_i))$ altér.
 \end{all}
 \begin{ff}
-	$V_k$ vektortér, $U,W\leq V$, $V=U\oplus W$, $\pi :V\to v$ lineáris
+	$V_k$ vektortér, $U,W\leq V$, $V=U\oplus W$, $\pi :V\to V$ lineáris
 	leképezés, $u\in U$, $w\in W$, hogy $v=u+w \in V$ esetén $\pi(v)=u$.
 	Ekkor $\pi$-t az \deff{$U$ altérre való $W$ irányú
 	vetítésnek nevezzük.}
@@ -214,7 +227,7 @@ Dia (deffiníció)tartalma:
 \begin{ff}
 	$\euclsp$ ekkor ha $v,w\in V$, akkor a \deff{szögük}:
 	\begin{equation*}
-		\arccos\frac{\scp{v,w}}{\vnorm{v}\vnorm{w}}
+		\arccos\frac{\scp{v,w}}{\vnorm{v}\cdot\vnorm{w}}
 	\end{equation*}
 \end{ff}
 \begin{ff}

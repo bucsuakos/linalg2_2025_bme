@@ -2,3 +2,7 @@
 *.aux
 linalg2*.pdf
 *.toc
+*.gz
+*.fdb_latexmk
+*.gz
+*.fls
